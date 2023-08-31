@@ -1,6 +1,6 @@
-import BaseButton from './BaseButton';
-import BaseCheckbox from './BaseCheckbox';
-import BaseModal from './BaseModal';
+import BaseButton from "./BaseButton";
+import BaseCheckbox from "./BaseCheckbox";
+import BaseModal from "./BaseModal";
 
 function TheModalEmbedPlaylist({ onClose: handleClose }) {
   return (
@@ -9,11 +9,14 @@ function TheModalEmbedPlaylist({ onClose: handleClose }) {
         Embed Playlist
       </h1>
       <div className="py-6 px-8 text-neutral-500 text-[13px]">
-        Lorem ipsum dolor sit amet{' '}
+        By embedding a Spotify player on your site, you are agreeing to{" "}
         <a href="/" className="text-white font-bold hover:underline">
-          consectetur adipisicing elit
+          Spotify's Developer Terms
+        </a> {" "}
+         and {" "} 
+        <a href="/" className="text-white font-bold hover:underline">
+          Spotify Platform Rules
         </a>
-        . Aliquam sit perferendis soluta architecto? Adipisci, atque.
       </div>
       <div className="flex justify-end items-center gap-4 pb-6 px-8">
         <BaseCheckbox>Show code</BaseCheckbox>

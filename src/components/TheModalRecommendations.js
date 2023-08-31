@@ -1,4 +1,4 @@
-import BaseModal from './BaseModal';
+import BaseModal from "./BaseModal";
 
 function TheModalRecommendations({ onClose: handleClose }) {
   return (
@@ -7,17 +7,20 @@ function TheModalRecommendations({ onClose: handleClose }) {
         About recommanedations
       </h1>
       <div className="py-6 px-8 overflow-y-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis
-        impedit cum quo provident alias commodi expedita accusantium sit natus
-        autem voluptates possimus ducimus necessitatibus numquam eum, nostrum
-        saepe quidem. Aspernatur, aperiam! Labore est maxime velit doloremque
-        saepe eos placeat blanditiis, consequatur, voluptatem obcaecati dolorem
-        et quas quaerat neque odio, dicta tempora architecto optio voluptatum
-        dolorum officia aliquam voluptates accusantium quis! Illum eaque
-        quibusdam sit et. Enim excepturi cum numquam deserunt facere sit
-        provident debitis tenetur voluptatem quidem. Fuga dolores animi aliquam
-        accusantium molestiae iure molestias, harum voluptatibus sunt ratione,
-        sapiente hic architecto ipsum quasi enim? Quasi perspiciatis nam nihil!
+        Our recommendations will help you find audio files for your enjoyment,
+        no matter if it's a favorite song from the past, a brand new hit or a
+        show you had no idea would interest you so much. Our editors around the
+        world have extensive knowledge of music and culture, and they make sure
+        that our playlists provide a great listening experience. Our
+        personalized recommendations take into account your unique taste and
+        take into account a variety of factors, such as the type of content you
+        listen to and when, the listening habits of people who have similar
+        taste in music and podcasts, and the professionalism of our music and
+        podcast experts. Commercial considerations may influence our
+        recommendations in some cases, but the enjoyment of the listener is our
+        first priority, and we always only recommend content that we think you
+        will want to hear. Our recommendations are based on the signals we
+        receive from you, so keep listening to the songs and podcasts you love!
       </div>
     </BaseModal>
   );
