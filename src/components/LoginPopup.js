@@ -52,7 +52,7 @@ const LoginPopup = ({ onClose }) => {
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
-          <BaseButton primary type="submit">
+          <BaseButton accent type="submit">
             Submit
           </BaseButton>
         </form>

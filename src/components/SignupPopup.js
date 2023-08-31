@@ -74,7 +74,7 @@ const SignupPopup = ({ onClose }) => {
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
-          <BaseButton primary accent type="submit">
+          <BaseButton accent type="submit">
             Sign Up
           </BaseButton>
         </form>
