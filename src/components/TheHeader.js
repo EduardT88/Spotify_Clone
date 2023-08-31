@@ -2,10 +2,35 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   Bars3Icon,
-} from '@heroicons/react/24/outline';
-import BaseButton from './BaseButton';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import BaseButton from "./BaseButton";
+import LoginPopup from "./LoginPopup";
+import SignupPopup from "./SignupPopup";
 
 function TheHeader() {
+  const [showSignupPopup, setShowSignupPopup] = useState(false);
+  const [showLoginPopup, setShowLoginPopup] = useState(false);
+
+  // const toggleLoginPopup = () => {
+  //   setLoginPopupOpen(!isLoginPopupOpen);
+  // };
+
+  const openSignupPopup = () => {
+    setShowSignupPopup(true);
+  };
+
+  const closeSignupPopup = () => {
+    setShowSignupPopup(false);
+  };
+
+  const openLoginPopup = () => {
+    setShowLoginPopup(true);
+  };
+
+  const closeLoginPopup = () => {
+    setShowLoginPopup(false);
+  };
   return (
     <header className="bg-[#070707] flex-1 flex justify-between items-center py-[10px] px-[13px] sm:px-[32px] sticky top-0 z-10">
       <div className="flex">
@@ -23,10 +48,14 @@ function TheHeader() {
         </a>
       </div>
       <div>
-        <BaseButton classes="text-gray-400 hover:text-white">
+        <BaseButton classes="text-gray-400 hover:text-white" onClick={openSignupPopup}>
           Sign up
         </BaseButton>
-        <BaseButton primary>Log in</BaseButton>
+        <BaseButton primary onClick={openLoginPopup}>
+          Log in
+        </BaseButton>
+        {showSignupPopup && <SignupPopup onClose={closeSignupPopup} />}
+        {showLoginPopup && <LoginPopup onClose={closeLoginPopup} />}
       </div>
     </header>
   );
